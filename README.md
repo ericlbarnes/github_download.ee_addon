@@ -6,7 +6,7 @@ Upload the "github_download" folder to your third_party directory. You will need
 
 ## Usage
 
-This plugin was designed so that you could put a download link directly on your site and not have to send people to get people to download it. Another plus is you can use "latest" for the tag and it will automatically update to your latest tag instead of having to manually edit it each time you make a new release. 
+This plugin was designed so that you could put a download link directly on your site and not have to send people to github to download it. Another plus is you can use "latest" for the tag and it will automatically update to your latest tag instead of having to manually edit it each time you make a new release. 
 
 	{exp:github_download user="githubusername" repo="reponame" tag="latest"}
 	Download
