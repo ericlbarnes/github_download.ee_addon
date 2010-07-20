@@ -13,7 +13,7 @@
 
 $plugin_info = array(
 	'pi_name'        =>	'Github_download',
-	'pi_version'     =>	'1.0',
+	'pi_version'     =>	'1.0.1',
 	'pi_author'      =>	'Eric Barnes',
 	'pi_author_url'  =>	'http://ericlbarnes.com/',
 	'pi_description' =>	'Create a download link from a git tag',
@@ -52,7 +52,7 @@ class Github_download {
 		
 		if ( ! $this->_requirements())
 		{
-			echo 'You must have json_decode';
+			return 'You must have json_decode';
 		}
 		
 		$this->user = $this->_get_param('user');
@@ -67,7 +67,7 @@ class Github_download {
 		
 		if ( ! $this->user OR ! $this->repo)
 		{
-			echo 'ERROR NO USER OR REPO GIVEN';
+			return 'ERROR NO USER OR REPO GIVEN';
 		}
 		
 		// Yes this is redundant but you never know
@@ -93,13 +93,9 @@ class Github_download {
 			$tag = $this->tag;
 		}
 		
-		
 		$this->return_data = '<a class="'.$this->class.'" href="'.$url.'/'.$tag.'">';
 		$this->return_data .= $this->EE->TMPL->tagdata;
 		$this->return_data .= '</a>';
-		
-		print_r($this->return_data);
-		//echo $url; 
 		
 		return $this->return_data;
 	}

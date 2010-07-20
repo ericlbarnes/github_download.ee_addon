@@ -12,7 +12,7 @@ This plugin was designed so that you could put a download link directly on your 
 	Download
 	{/exp:github_download}
 	
-## Paramaters
+## Parameters
 
   * user - Required - Github username
   * repo - Required - Github repo name
