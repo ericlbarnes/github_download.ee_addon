@@ -27,7 +27,7 @@ class Github_download {
 
 	protected $EE = ''; 
 	
-	protected $return_data = '';
+	public $return_data = '';
 	
 	protected $user = '';
 	
@@ -96,8 +96,6 @@ class Github_download {
 		$this->return_data = '<a class="'.$this->class.'" href="'.$url.'/'.$tag.'">';
 		$this->return_data .= $this->EE->TMPL->tagdata;
 		$this->return_data .= '</a>';
-		
-		return $this->return_data;
 	}
 	
 	// ------------------------------------------------------------------------
