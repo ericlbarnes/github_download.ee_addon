@@ -12,7 +12,7 @@
 // ------------------------------------------------------------------------
 
 $plugin_info = array(
-	'pi_name'        =>	'Github_download',
+	'pi_name'        =>	'Github Download',
 	'pi_version'     =>	'1.0.1',
 	'pi_author'      =>	'Eric Barnes',
 	'pi_author_url'  =>	'http://ericlbarnes.com/',
